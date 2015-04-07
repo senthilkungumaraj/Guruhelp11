@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" %>
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<%-- Place favicon.ico and apple-touch-icon(s) in the root directory --%>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800">
+		<link rel="stylesheet" href="/lib/css/style.css">
+		<script src="/lib/js/modernizr-2.8.3.min.js"></script>
+	</head>
+<body>
+	<form id="form1" runat="server">
+		<header>
+			<div class="wrap">
+				<a href="/" class="logo">
+					<object type="image/svg+xml" data="/lib/img/logo.svg" class="logo">
+						PAMED logo <!-- fallback image in CSS -->
+					</object>
+				</a>
+				<button class="nav-toggle fa fa-bars" data-target="#navwrap"><span>Menu</span></button>
+				<div class="navwrap" id="navwrap">
+					<nav class="mainnav">
+						<ul class="list-plain cf">
+							<li class="haschildren"><a href="#">Physician Advocacy</a>
+								<div class="sub-menu">
+									<ul class="list-plain cf">
+										<li><a href="#">Physician Advocacy Item 1</a></li>
+										<li><a href="#">Physician Advocacy 2</a></li>
+										<li><a href="#">Physician Advocacy 3</a></li>
+										<li><a href="#">Physician Advocacy 4</a>
+									</ul>
+								</div>
+							</li>
+							<li><a href="#">Professional Development</a></li>
+							<li class="haschildren"><a href="#">Tools &amp; Resoureces</a>
+								<div class="sub-menu">
+									<ul class="list-plain cf">
+										<li><a href="#">Tools &amp; Resoureces Item 1</a></li>
+										<li><a href="#">Tools &amp; Resoureces 2</a></li>
+										<li><a href="#">Tools &amp; Resoureces 3</a></li>
+										<li><a href="#">Tools &amp; Resoureces 4</a>
+									</ul>
+								</div>
+							</li>
+							<li class="haschildren"><a href="#">About PAMED</a>
+								<div class="sub-menu">
+									<ul class="list-plain cf">
+										<li><a href="#">PAMED Community</a></li>
+										<li><a href="#">Contact</a></li>
+										<li><a href="#">Membership</a></li>
+										<li><a href="#">Media</a>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</nav>
+					<nav class="logedinnav cf">
+						<p class="welcome">Welocome <span>Laruen!</span></p>
+						<ul class="list-plain cf">
+							<li><a class="fa fa-user" href="#"><span>Member Profile</span></a></li>
+							<li><a class="fa fa-heart" href="#"><span>Favorites</span></a></li>
+							<li><a class="fa fa-gears" href="#"><span>Customize</span></a></li>
+							<li><a class="fa fa-lock" href="#"><span>Logout</span></a></li>
+						</ul>
+					</nav>
+					<nav class="secnav">
+						<ul class="list-plain cf">
+							<li><a class="fa fa-shopping-cart" href="#"><span>(2) PAMED store</span></a></li>
+							<li><a class="fa fa-calendar" href="#"><span>Calendar</span></a></li>
+							<li><a class="fa fa-share" href="#"><span>Follow Us</span></a></li>
+							<li><a class="fa fa-envelope" href="#"><span>Contact Us</span></a></li>
+							<li><a class="fa fa-search" href="#"><span>Search</span></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<section class="maincontent">
+			<asp:contentplaceholder id="primaryContent" runat="server" />
+		</section>
+		<footer>
+			<div class="wrap padd cf">
+				<div class="footleft">
+					<ul class="social list-plain cf">
+						<li><a class="fa fa-facebook-square" href="#"><span>Facebook</span></a></li>
+						<li><a class="fa fa-linkedin-square" href="#"><span>LinkedIn</span></a></li>
+						<li><a class="fa fa-youtube-square" href="#"><span>YouTube</span></a></li>
+						<li><a class="fa fa-twitter-square" href="#"><span>Facebook</span></a></li>
+					</ul>
+					<nav class="footermain">
+						<ul class="list-plain cf">
+							<li><a href="#">Physician Advocacy</a></li>
+							<li><a href="#">Professional Development</a></li>
+							<li><a href="#">Tools &amp; Resoureces</a></li>
+							<li><a href="#">About PAMED</a></li>
+						</ul>
+					</nav>
+					<nav class="footersec">
+						<ul class="list-plain cf">
+							<li><a href="#">Member Profile</a></li>
+							<li><a href="#">PAMED Store</a></li>
+							<li><a href="#">Calendar</a></li>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Privacy Statement</a></li>
+							<li><a href="#">Terms of Use</a></li>
+						</ul>
+					</nav>
+					<div class="addressinfo">
+						<p>Pennsylvania Medical Society<br>
+							777 E. Park Drive | PO Box 8820 | Harrisburg, PA 17105-8820<br>
+							(717) 558-7750 | Toll free in Pennsylvania only: (800) 228-7823<br>
+							stat@pamedsoc.org
+						</p>
+					</div>
+				</div>
+				<div class="footright">
+					<div class="foundationwrap">
+						<p class="nomargin">
+							<object type="image/svg+xml" data="/lib/img/thefoundation.svg">
+								The Foundation of the Pennsylvania Medical Society <!-- fallback image in CSS -->
+							</object>
+						</p>
+						<p>The Foundation of the Pennsylvania Medical Society provides programs and services for individual physicians and others that improve the well-being of Pennsylvanians and sustain the future of medicine. <span class="fa fa-chevron-circle-right"></span></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</form>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+	<script src="/lib/js/scripts.js"></script>
+
+	<%-- Google Analytics: change UA-XXXXX-X to be your site's ID. --%>
+	<script>
+		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='//www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+		ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+	</script>
+</body>
+</html>
