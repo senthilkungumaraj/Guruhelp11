@@ -6,3 +6,5 @@
 <%@ Import Namespace="Microsoft.SharePoint" %> 
 <%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 <%@ Control Language="C#" AutoEventWireup="true" CodeBehind="CallOuts4Column.ascx.cs" Inherits="SP2013Branding.WebParts.CallOuts4Column.CallOuts4Column" %>
+
+<div id="container" runat="server" style="width: 700px; display: inline-block; position: relative; height: 120px;"></div>

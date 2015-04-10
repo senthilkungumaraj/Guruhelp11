@@ -57,6 +57,9 @@
   <ItemGroup>
     <Compile Include="Controller\BannerController.cs" />
     <Compile Include="Controller\CallOutController.cs" />
+    <Compile Include="Features\SP2013MasterPage\SP2013MasterPage.EventReceiver.cs">
+      <DependentUpon>SP2013MasterPage.feature</DependentUpon>
+    </Compile>
     <Compile Include="Model\CallOut.cs" />
     <Compile Include="Features\SP2013ListInstances\SP2013ListInstances.EventReceiver.cs">
       <DependentUpon>SP2013ListInstances.feature</DependentUpon>
@@ -198,7 +201,9 @@
     </Content>
     <Content Include="ListInstances\Call Outs\Elements.xml" />
     <Content Include="ListInstances\Hero Banners\Elements.xml" />
-    <Content Include="MasterPage\Elements.xml" />
+    <Content Include="MasterPage\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="MasterPage\lib\css\bootstrap.css" />
     <Content Include="MasterPage\lib\css\normalize.css" />
     <Content Include="MasterPage\lib\css\style-correction.css" />

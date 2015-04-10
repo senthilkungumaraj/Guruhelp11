@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Branding MasterPage" Description="Applies Branding to the Publishing Pages" Id="883dbde3-cbbe-4111-a1a4-03e9ea931756" Scope="Site">
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Branding MasterPage" Description="Applies Branding to the Publishing Pages" Id="883dbde3-cbbe-4111-a1a4-03e9ea931756" ReceiverAssembly="SP2013Branding, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb4788e3a259209" ReceiverClass="SP2013Branding.Features.SP2013MasterPage.SP2013MasterPageEventReceiver" Scope="Site">
   <ElementManifests>
     <ElementManifest Location="MasterPage\Elements.xml" />
     <ElementFile Location="MasterPage\lib\css\bootstrap.css" />

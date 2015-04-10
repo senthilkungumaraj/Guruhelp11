@@ -7,8 +7,8 @@
     </metaData>
     <data>
       <properties>
-        <property name="Title" type="string">SP2013Branding - CallOuts4Column</property>
-        <property name="Description" type="string">My Visual Web Part</property>
+        <property name="Title" type="string">Call Outs 4 Column</property>
+        <property name="Description" type="string">Call Outs 4 Column Web Part</property>
       </properties>
     </data>
   </webPart>

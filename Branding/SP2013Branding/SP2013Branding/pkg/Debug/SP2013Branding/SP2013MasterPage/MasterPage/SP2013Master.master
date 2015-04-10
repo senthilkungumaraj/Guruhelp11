@@ -270,8 +270,8 @@
 					</div>
 					<div style="clear:both;" />
 					
-					<div class="ms-dialogHidden">
-						&copy; Copyright 2012 StarterBranding
+					<div class="ms-dialogHidden" style="display: none;">
+						&copy; Copyright 2015
 					</div>		
                         
                     </section>			
