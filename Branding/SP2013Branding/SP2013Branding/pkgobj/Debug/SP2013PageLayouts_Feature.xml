@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Branding Page Layouts" Description="This feature will deploy branding and associated artifacts" Id="814b76e5-834d-43e1-9c28-550782e6120d" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="PageLayouts\Elements.xml" />
+    <ElementFile Location="PageLayouts\HomeWebPartPage.aspx" />
+  </ElementManifests>
+</Feature>

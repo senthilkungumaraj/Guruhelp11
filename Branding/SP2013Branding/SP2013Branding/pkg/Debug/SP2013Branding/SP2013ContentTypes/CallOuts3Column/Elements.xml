@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100A78FEBE1E0144F13BBED09BC55575A26" Name="Call Outs 3 Column" Group="Custom Content Types" Description="Call Outs 3 Column Layouts" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9180}" DisplayName="Thumbnail Picture" Required="FALSE" Name="ThumbnailPicture" />
+      <FieldRef ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9181}" DisplayName="Thumbnail Text" Required="FALSE" Name="ThumbnailText" />
+      <FieldRef ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9182}" DisplayName="Headline" Required="FALSE" Name="Headline" />
+      <FieldRef ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9183}" DisplayName="Call Out Body" Required="FALSE" Name="Body" />
+      <FieldRef ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9184}" DisplayName="Open In New Window?" Required="FALSE" Name="OpenInNewWindow" />
+      <FieldRef ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9185}" DisplayName="Mini Thumbnail" Required="FALSE" Name="MiniThumbnail" />
+      <FieldRef ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9186}" DisplayName="Mini Thumbnail Alt Text" Required="FALSE" Name="MiniThumbnailAltText" />
+      <FieldRef ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9187}" DisplayName="Background Style" Required="FALSE" Name="BackgroundStyle" />
+      <FieldRef ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9188}" DisplayName="Call Out Link" Required="FALSE" Name="CallOutLink" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

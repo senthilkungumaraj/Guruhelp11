@@ -1,0 +1,115 @@
+@blue : #004568;
+@brightblue : #0855a6;
+@orange : #f95639;
+@green : #beca5c;
+@teal : #00a79e;
+@tealLigtht : #24b3ac;
+@grey : #676767;
+@lightGrey : #e8e6e4;
+@darkGrey : #333333;
+@purple: #975d9e;
+@wDesktop : 964px;
+@wTablet : 728px;
+@wMobile : 320px;
+
+@px : px;
+
+.boxShadow(@x, @y, @blur, @color) {
+  -webkit-box-shadow: @x @y @blur @color;
+     -moz-box-shadow: @x @y @blur @color;
+          box-shadow: @x @y @blur @color;
+}
+.boxShadowInset(@x, @y, @blur, @color) {
+  -webkit-box-shadow: inset @x @y @blur @color;
+     -moz-box-shadow: inset @x @y @blur @color;
+          box-shadow: inset @x @y @blur @color;
+}
+.borderRadius(@value) {
+  -webkit-border-radius: @value;
+     -moz-border-radius: @value;
+          border-radius: @value;
+}
+.borderRadiusTopLeft(@value) {
+  -webkit-border-top-left-radius: @value;
+     -moz-border-top-left-radius: @value;
+          border-top-left-radius: @value;
+}
+.borderRadiusTopRight(@value) {
+  -webkit-border-top-right-radius: @value;
+     -moz-border-top-right-radius: @value;
+          border-top-right-radius: @value;
+}
+.borderRadiusBottomLeft(@value) {
+  -webkit-border-bottom-left-radius: @value;
+     -moz-border-bottom-left-radius: @value;
+          border-bottom-left-radius: @value;
+}
+.borderRadiusBottomRight(@value) {
+  -webkit-border-bottom-right-radius: @value;
+     -moz-border-bottom-right-radius: @value;
+          border-bottom-right-radius: @value;
+}
+.transition(@property, @duration, @function) {
+  -webkit-transition: @property @duration @function;
+     -moz-transition: @property @duration @function;
+      -ms-transition: @property @duration @function;
+       -o-transition: @property @duration @function;
+          transition: @property @duration @function;
+}
+.rotate(@property) {
+  -webkit-transform: rotate(@property);
+     -moz-transform: rotate(@property);
+      -ms-transform: rotate(@property);
+       -o-transform: rotate(@property);
+          transform: rotate(@property);
+}
+.translate(@propertyX, @propertyY) {
+  -webkit-transform: translate(@propertyX, @propertyY);
+     -moz-transform: translate(@propertyX, @propertyY);
+      -ms-transform: translate(@propertyX, @propertyY);
+       -o-transform: translate(@propertyX, @propertyY);
+          transform: translate(@propertyX, @propertyY);
+}
+.rotate_translate(@propertyR, @propertyTX, @propertyTY) {
+  -webkit-transform: rotate(@propertyR) translate(@propertyTX, @propertyTY);
+     -moz-transform: rotate(@propertyR) translate(@propertyTX, @propertyTY);
+      -ms-transform: rotate(@propertyR) translate(@propertyTX, @propertyTY);
+       -o-transform: rotate(@propertyR) translate(@propertyTX, @propertyTY);
+          transform: rotate(@propertyR) translate(@propertyTX, @propertyTY);
+}
+.pulsate(@propertyS, @propertyTX, @propertyTY) {
+  -webkit-transform: scale(@propertyS) translate(@propertyTX, @propertyTY);
+     -moz-transform: scale(@propertyS) translate(@propertyTX, @propertyTY);
+      -ms-transform: scale(@propertyS) translate(@propertyTX, @propertyTY);
+       -o-transform: scale(@propertyS) translate(@propertyTX, @propertyTY);
+          transform: scale(@propertyS) translate(@propertyTX, @propertyTY);
+}
+.translate3D(@X, @Y, @Z) {
+  -webkit-transform: translate3d(@X, @Y, @Z);
+     -moz-transform: translate3d(@X, @Y, @Z);
+      -ms-transform: translate3d(@X, @Y, @Z);
+       -o-transform: translate3d(@X, @Y, @Z);
+          transform: translate(@X, @Y, @Z);
+}
+.scale(@X, @Y) {
+  -webkit-transform: scale(@X, @Y);
+     -moz-transform: scale(@X, @Y);
+      -ms-transform: scale(@X, @Y);
+       -o-transform: scale(@X, @Y);
+          transform: scale(@X, @Y);
+}
+.scrolldownKey(@key, @property, @duration, @function) {
+  -webkit-animation: @key @property @duration @function;
+  -moz-animation: @key @property @duration @function;
+  -ms-animation: @key @property @duration @function;
+  -o-animation: @key @property @duration @function;
+  animation: @key @property @duration @function;
+}
+.backgroundImage(@value1, @value2) {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(.3, @value2), color-stop(1, @value1));
+  background-image: -webkit-linear-gradient(top, @value2 30%, @value1 100%);
+  background-image:    -moz-linear-gradient(top, @value2 30%, @value1 100%);
+  background-image:     -ms-linear-gradient(top, @value2 30%, @value1 100%);
+  background-image:      -o-linear-gradient(top, @value2 30%, @value1 100%);
+  background-image:         linear-gradient(to bottom, @value2 30%, @value1 100%);
+}

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Branding MasterPage" Description="Applies Branding to the Publishing Pages" Id="883dbde3-cbbe-4111-a1a4-03e9ea931756" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="MasterPage\Elements.xml" />
+    <ElementFile Location="MasterPage\lib\css\bootstrap.css" />
+    <ElementFile Location="MasterPage\lib\css\bootstrap.less" />
+    <ElementFile Location="MasterPage\lib\css\normalize.css" />
+    <ElementFile Location="MasterPage\lib\css\normalize.less" />
+    <ElementFile Location="MasterPage\lib\css\style-correction.css" />
+    <ElementFile Location="MasterPage\lib\css\style-desktop-large.css" />
+    <ElementFile Location="MasterPage\lib\css\style-desktop-large.less" />
+    <ElementFile Location="MasterPage\lib\css\style-desktop.css" />
+    <ElementFile Location="MasterPage\lib\css\style-desktop.less" />
+    <ElementFile Location="MasterPage\lib\css\style-fonts.css" />
+    <ElementFile Location="MasterPage\lib\css\style-fonts.less" />
+    <ElementFile Location="MasterPage\lib\css\style-mobile.less" />
+    <ElementFile Location="MasterPage\lib\css\style-tablet.less" />
+    <ElementFile Location="MasterPage\lib\css\style.css" />
+    <ElementFile Location="MasterPage\lib\css\style.less" />
+    <ElementFile Location="MasterPage\lib\css\variables-mixins.less" />
+    <ElementFile Location="MasterPage\lib\fonts\fontawesome-webfont.eot" />
+    <ElementFile Location="MasterPage\lib\fonts\fontawesome-webfont.svg" />
+    <ElementFile Location="MasterPage\lib\fonts\fontawesome-webfont.ttf" />
+    <ElementFile Location="MasterPage\lib\fonts\fontawesome-webfont.woff" />
+    <ElementFile Location="MasterPage\lib\fonts\fontawesome-webfont.woff2" />
+    <ElementFile Location="MasterPage\lib\img\logo.png" />
+    <ElementFile Location="MasterPage\lib\img\logo.svg" />
+    <ElementFile Location="MasterPage\lib\img\thefoundation.svg" />
+    <ElementFile Location="MasterPage\lib\img\watermark.svg" />
+    <ElementFile Location="MasterPage\lib\img\home\call-thumb1.jpg" />
+    <ElementFile Location="MasterPage\lib\img\home\call-thumb2.jpg" />
+    <ElementFile Location="MasterPage\lib\img\home\call-thumb3.jpg" />
+    <ElementFile Location="MasterPage\lib\img\home\hero.png" />
+    <ElementFile Location="MasterPage\lib\img\home\main-bg.png" />
+    <ElementFile Location="MasterPage\lib\js\jquery-1.11.1.min.js" />
+    <ElementFile Location="MasterPage\lib\js\modernizr-2.8.3.min.js" />
+    <ElementFile Location="MasterPage\lib\js\scripts.js" />
+    <ElementFile Location="MasterPage\SP2013Master.master" />
+  </ElementManifests>
+</Feature>

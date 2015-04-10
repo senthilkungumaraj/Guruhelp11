@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Branding List Instances" Description="Adds List Instances required for branding and related customizations." Id="21193401-9c82-40e1-86ab-0efcc0efb941" ReceiverAssembly="SP2013Branding, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb4788e3a259209" ReceiverClass="SP2013Branding.Features.SP2013ListInstances.SP2013ListInstancesEventReceiver" Scope="Web">
+  <ElementManifests>
+    <ElementManifest Location="Call Outs\Elements.xml" />
+    <ElementManifest Location="HeroBanner\Elements.xml" />
+    <ElementManifest Location="Hero Banners\Elements.xml" />
+  </ElementManifests>
+</Feature>

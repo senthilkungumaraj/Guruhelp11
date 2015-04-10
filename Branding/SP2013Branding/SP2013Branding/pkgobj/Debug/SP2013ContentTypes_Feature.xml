@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Branding Content Types" Description="Branding and Web Parts Related Content Types" Id="8d8680c5-bf3a-4a39-80c9-31bc41b89411" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="SiteColumns\Elements.xml" />
+    <ElementManifest Location="HomePage\Elements.xml" />
+    <ElementManifest Location="CallOuts3Column\Elements.xml" />
+    <ElementManifest Location="CallOuts4Column\Elements.xml" />
+  </ElementManifests>
+</Feature>

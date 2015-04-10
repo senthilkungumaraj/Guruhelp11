@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field
+      ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9180}"
+      Name="ThumbnailPicture"
+      DisplayName="Thumbnail Picture"
+      Type="URL"
+      Required="FALSE"
+      Group="Branding Site Columns">
+  </Field>
+  <Field
+      ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9181}"
+      Name="ThumbnailText"
+      DisplayName="Thumbnail Text"
+      Type="Text"
+      Required="FALSE"
+      Group="Branding Site Columns">
+  </Field>
+  <Field
+      ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9182}"
+      Name="Headline"
+      DisplayName="Headline"
+      Type="Text"
+      Required="FALSE"
+      Group="Branding Site Columns">
+  </Field>
+  <Field
+      ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9183}"
+      Name="CallOutBody"
+      DisplayName="Call Out Body"
+      Type="Note"
+      Required="FALSE"
+      Group="Branding Site Columns">
+  </Field>
+  <Field
+      ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9184}"
+      Name="OpenInNewWindow"
+      DisplayName="Open In New Window?"
+      Type="Boolean"
+      Required="FALSE"
+      Group="Branding Site Columns">
+  </Field>
+  <Field
+      ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9185}"
+      Name="MiniThumbnail"
+      DisplayName="Mini Thumbnail"
+      Type="URL"
+      Required="FALSE"
+      Group="Branding Site Columns">
+  </Field>
+  <Field
+      ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9186}"
+      Name="MiniThumbnailAltText"
+      DisplayName="Mini Thumbnail Alt Text"
+      Type="Text"
+      Required="FALSE"
+      Group="Branding Site Columns">
+  </Field>
+  <Field
+      ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9187}"
+      Name="BackgroundStyle"
+      DisplayName="Background Style"
+      Type="Choice"
+      Required="FALSE"
+      Group="Branding Site Columns">
+    <CHOICES>
+      <CHOICE>No Background</CHOICE>
+      <CHOICE>Image Background</CHOICE>
+    </CHOICES>
+  </Field>
+  <Field
+      ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9188}"
+      Name="CallOutLink"
+      DisplayName="Call Out Link"
+      Type="URL"
+      Required="FALSE"
+      Group="Branding Site Columns">
+  </Field>
+  <Field
+       ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9195}"
+       Name="BannerImage"
+       DisplayName="Banner Image"
+       Type="URL"
+       Required="FALSE"
+       Group="Branding Site Columns">
+  </Field>
+  <Field
+       ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9194}"
+       Name="BannerText"
+       DisplayName="Banner Text"
+       Type="Note"
+       Required="FALSE"
+       Group="Branding Site Columns">
+  </Field>
+</Elements>

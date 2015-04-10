@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Branding Content Type Binding" Description="This feature is for binding the content type to the Pages Library" Id="cf7c12a7-d8ab-453b-93af-ed81cf67bc90" Scope="Web">
+  <ElementManifests>
+    <ElementManifest Location="ContentTypeBindings\Elements.xml" />
+  </ElementManifests>
+</Feature>

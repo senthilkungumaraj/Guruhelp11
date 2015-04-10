@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="MasterPage\" Type="ElementManifest" />
+    <ProjectItemFile Source="lib\css\bootstrap.css" Target="MasterPage\lib\css\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\css\bootstrap.less" Target="MasterPage\lib\css\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\css\normalize.css" Target="MasterPage\lib\css\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\css\normalize.less" Target="MasterPage\lib\css\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\css\style-correction.css" Target="MasterPage\lib\css\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\css\style-desktop-large.css" Target="MasterPage\lib\css\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\css\style-desktop-large.less" Target="MasterPage\lib\css\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\css\style-desktop.css" Target="MasterPage\lib\css\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\css\style-desktop.less" Target="MasterPage\lib\css\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\css\style-fonts.css" Target="MasterPage\lib\css\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\css\style-fonts.less" Target="MasterPage\lib\css\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\css\style-mobile.less" Target="MasterPage\lib\css\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\css\style-tablet.less" Target="MasterPage\lib\css\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\css\style.css" Target="MasterPage\lib\css\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\css\style.less" Target="MasterPage\lib\css\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\css\variables-mixins.less" Target="MasterPage\lib\css\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\fonts\fontawesome-webfont.eot" Target="MasterPage\lib\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\fonts\fontawesome-webfont.svg" Target="MasterPage\lib\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\fonts\fontawesome-webfont.ttf" Target="MasterPage\lib\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\fonts\fontawesome-webfont.woff" Target="MasterPage\lib\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\fonts\fontawesome-webfont.woff2" Target="MasterPage\lib\fonts\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\img\logo.png" Target="MasterPage\lib\img\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\img\logo.svg" Target="MasterPage\lib\img\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\img\thefoundation.svg" Target="MasterPage\lib\img\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\img\watermark.svg" Target="MasterPage\lib\img\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\img\home\call-thumb1.jpg" Target="MasterPage\lib\img\home\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\img\home\call-thumb2.jpg" Target="MasterPage\lib\img\home\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\img\home\call-thumb3.jpg" Target="MasterPage\lib\img\home\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\img\home\hero.png" Target="MasterPage\lib\img\home\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\img\home\main-bg.png" Target="MasterPage\lib\img\home\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\js\jquery-1.11.1.min.js" Target="MasterPage\lib\js\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\js\modernizr-2.8.3.min.js" Target="MasterPage\lib\js\" Type="ElementFile" />
+    <ProjectItemFile Source="lib\js\scripts.js" Target="MasterPage\lib\js\" Type="ElementFile" />
+    <ProjectItemFile Source="SP2013Master.master" Target="MasterPage\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

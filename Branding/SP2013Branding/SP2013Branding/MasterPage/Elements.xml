@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="MasterPage" Path="MasterPage" RootWebOnly="TRUE" Url="_catalogs/masterpage">
+    <File Path="lib\css\bootstrap.css" Url="lib/css/bootstrap.css" />
+    <File Path="lib\css\bootstrap.less" Url="lib/css/bootstrap.less" />
+    <File Path="lib\css\normalize.css" Url="lib/css/normalize.css" />
+    <File Path="lib\css\normalize.less" Url="lib/css/normalize.less" />
+    <File Path="lib\css\style-correction.css" Url="lib/css/style-correction.css" />
+    <File Path="lib\css\style-desktop-large.css" Url="lib/css/style-desktop-large.css" />
+    <File Path="lib\css\style-desktop-large.less" Url="lib/css/style-desktop-large.less" />
+    <File Path="lib\css\style-desktop.css" Url="lib/css/style-desktop.css" />
+    <File Path="lib\css\style-desktop.less" Url="lib/css/style-desktop.less" />
+    <File Path="lib\css\style-fonts.css" Url="lib/css/style-fonts.css" />
+    <File Path="lib\css\style-fonts.less" Url="lib/css/style-fonts.less" />
+    <File Path="lib\css\style-mobile.less" Url="lib/css/style-mobile.less" />
+    <File Path="lib\css\style-tablet.less" Url="lib/css/style-tablet.less" />
+    <File Path="lib\css\style.css" Url="lib/css/style.css" />
+    <File Path="lib\css\style.less" Url="lib/css/style.less" />
+    <File Path="lib\css\variables-mixins.less" Url="lib/css/variables-mixins.less" />
+    <File Path="lib\fonts\fontawesome-webfont.eot" Url="lib/fonts/fontawesome-webfont.eot" />
+    <File Path="lib\fonts\fontawesome-webfont.svg" Url="lib/fonts/fontawesome-webfont.svg" />
+    <File Path="lib\fonts\fontawesome-webfont.ttf" Url="lib/fonts/fontawesome-webfont.ttf" />
+    <File Path="lib\fonts\fontawesome-webfont.woff" Url="lib/fonts/fontawesome-webfont.woff" />
+    <File Path="lib\fonts\fontawesome-webfont.woff2" Url="lib/fonts/fontawesome-webfont.woff2" />
+    <File Path="lib\img\logo.png" Url="lib/img/logo.png" />
+    <File Path="lib\img\logo.svg" Url="lib/img/logo.svg" />
+    <File Path="lib\img\thefoundation.svg" Url="lib/img/thefoundation.svg" />
+    <File Path="lib\img\watermark.svg" Url="lib/img/watermark.svg" />
+    <File Path="lib\img\home\call-thumb1.jpg" Url="lib/img/home/call-thumb1.jpg" />
+    <File Path="lib\img\home\call-thumb2.jpg" Url="lib/img/home/call-thumb2.jpg" />
+    <File Path="lib\img\home\call-thumb3.jpg" Url="lib/img/home/call-thumb3.jpg" />
+    <File Path="lib\img\home\hero.png" Url="lib/img/home/hero.png" />
+    <File Path="lib\img\home\main-bg.png" Url="lib/img/home/main-bg.png" />
+    <File Path="lib\js\jquery-1.11.1.min.js" Url="lib/js/jquery-1.11.1.min.js" />
+    <File Path="lib\js\modernizr-2.8.3.min.js" Url="lib/js/modernizr-2.8.3.min.js" />
+    <File Path="lib\js\scripts.js" Url="lib/js/scripts.js" />
+    <File Path="SP2013Master.master" Url="SP2013Master.master" Type="GhostableInLibrary" IgnoreIfAlreadyExists="TRUE"  />
+  </Module>
+</Elements>

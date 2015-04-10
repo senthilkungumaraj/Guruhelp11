@@ -1,30 +1,27 @@
-﻿<!doctype html>
+﻿<%@ Master Language="C#" %>
+<!doctype html>
 <html class="no-js" lang="">
 	<head>
-		<meta charset="utf-8"/>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title></title>
-		<meta name="description" content=""/>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800"/>
-		<link rel="stylesheet" href="./lib/css/style.css"/>
-		<link rel="stylesheet" href="./lib/css/normalize.css"/>
-		<link rel="stylesheet" href="./lib/css/bootstrap.css"/>
-		<link rel="stylesheet" href="./lib/css/style-desktop-large.css"/>
-		<link rel="stylesheet" href="./lib/css/style-fonts.css"/>
-		<script src="./lib/js/modernizr-2.8.3.min.js"></script>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<%-- Place favicon.ico and apple-touch-icon(s) in the root directory --%>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800">
+		<link rel="stylesheet" href="/lib/css/style.css">
+		<script src="/lib/js/modernizr-2.8.3.min.js"></script>
 	</head>
 <body>
-	<div id="form1">
+	<form id="form1" runat="server">
 		<header>
 			<div class="wrap">
 				<a href="/" class="logo">
-					<object type="image/svg+xml" data="./lib/img/logo.svg" class="logo">
+					<object type="image/svg+xml" data="/lib/img/logo.svg" class="logo">
 						PAMED logo <!-- fallback image in CSS -->
 					</object>
 				</a>
-				<button style="display:none;" class="nav-toggle fa fa-bars" data-target="#navwrap"><span>Menu</span></button>
+				<button class="nav-toggle fa fa-bars" data-target="#navwrap"><span>Menu</span></button>
 				<div class="navwrap" id="navwrap">
 					<nav class="mainnav">
 						<ul class="list-plain cf">
@@ -34,7 +31,7 @@
 										<li><a href="#">Physician Advocacy Item 1</a></li>
 										<li><a href="#">Physician Advocacy 2</a></li>
 										<li><a href="#">Physician Advocacy 3</a></li>
-										<li><a href="#">Physician Advocacy 4</a></li>
+										<li><a href="#">Physician Advocacy 4</a>
 									</ul>
 								</div>
 							</li>
@@ -45,7 +42,7 @@
 										<li><a href="#">Tools &amp; Resoureces Item 1</a></li>
 										<li><a href="#">Tools &amp; Resoureces 2</a></li>
 										<li><a href="#">Tools &amp; Resoureces 3</a></li>
-										<li><a href="#">Tools &amp; Resoureces 4</a></li>
+										<li><a href="#">Tools &amp; Resoureces 4</a>
 									</ul>
 								</div>
 							</li>
@@ -55,7 +52,7 @@
 										<li><a href="#">PAMED Community</a></li>
 										<li><a href="#">Contact</a></li>
 										<li><a href="#">Membership</a></li>
-										<li><a href="#">Media</a></li>
+										<li><a href="#">Media</a>
 									</ul>
 								</div>
 							</li>
@@ -83,7 +80,7 @@
 			</div>
 		</header>
 		<section class="maincontent">
-			
+			<asp:contentplaceholder id="primaryContent" runat="server" />
 		</section>
 		<footer>
 			<div class="wrap padd cf">
@@ -113,9 +110,9 @@
 						</ul>
 					</nav>
 					<div class="addressinfo">
-						<p>Pennsylvania Medical Society
-							777 E. Park Drive | PO Box 8820 | Harrisburg, PA 17105-8820
-							(717) 558-7750 | Toll free in Pennsylvania only: (800) 228-7823
+						<p>Pennsylvania Medical Society<br>
+							777 E. Park Drive | PO Box 8820 | Harrisburg, PA 17105-8820<br>
+							(717) 558-7750 | Toll free in Pennsylvania only: (800) 228-7823<br>
 							stat@pamedsoc.org
 						</p>
 					</div>
@@ -123,7 +120,7 @@
 				<div class="footright">
 					<div class="foundationwrap">
 						<p class="nomargin">
-							<object type="image/svg+xml" data="./lib/img/thefoundation.svg">
+							<object type="image/svg+xml" data="/lib/img/thefoundation.svg">
 								The Foundation of the Pennsylvania Medical Society <!-- fallback image in CSS -->
 							</object>
 						</p>
@@ -132,12 +129,12 @@
 				</div>
 			</div>
 		</footer>
-	</div>
+	</form>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="./lib/js/jquery-1.11.1.min.js"><\/script>')</script>
-	<script src="./lib/js/scripts.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+	<script src="/lib/js/scripts.js"></script>
 
-	
+	<%-- Google Analytics: change UA-XXXXX-X to be your site's ID. --%>
 	<script>
 		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
 		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;

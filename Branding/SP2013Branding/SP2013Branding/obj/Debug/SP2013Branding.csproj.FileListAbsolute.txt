@@ -1,0 +1,10 @@
+E:\SVN\SharePoint2013\SP2013Branding\SP2013Branding\bin\Debug\SP2013Branding.dll
+E:\SVN\SharePoint2013\SP2013Branding\SP2013Branding\bin\Debug\SP2013Branding.pdb
+E:\SVN\SharePoint2013\SP2013Branding\SP2013Branding\obj\Debug\SP2013Branding.dll
+E:\SVN\SharePoint2013\SP2013Branding\SP2013Branding\obj\Debug\SP2013Branding.pdb
+E:\SVN\SharePoint2013\SP2013Branding\SP2013Branding\obj\Debug\SP2013Branding.csprojResolveAssemblyReference.cache
+C:\DEV\SP2013Branding\SP2013Branding\bin\Debug\SP2013Branding.dll
+C:\DEV\SP2013Branding\SP2013Branding\bin\Debug\SP2013Branding.pdb
+C:\DEV\SP2013Branding\SP2013Branding\obj\Debug\SP2013Branding.csprojResolveAssemblyReference.cache
+C:\DEV\SP2013Branding\SP2013Branding\obj\Debug\SP2013Branding.dll
+C:\DEV\SP2013Branding\SP2013Branding\obj\Debug\SP2013Branding.pdb

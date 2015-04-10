@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="433cf1f2-51a4-4b2b-b6be-5a399b8615c6" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="SP2013Branding.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="SP2013Branding, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb4788e3a259209" Namespace="SP2013Branding.WebParts.CallOuts4Column" TypeName="*" />
+        <SafeControl Assembly="SP2013Branding, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb4788e3a259209" Namespace="SP2013Branding.WebParts.CallOuts3Column" TypeName="*" />
+        <SafeControl Assembly="SP2013Branding, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb4788e3a259209" Namespace="SP2013Branding.WebParts.HeroBanner" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="SP2013PageLayouts\Feature.xml" />
+    <FeatureManifest Location="SP2013ContentTypeBindings\Feature.xml" />
+    <FeatureManifest Location="SP2013ContentTypes\Feature.xml" />
+    <FeatureManifest Location="SP2013ListInstances\Feature.xml" />
+    <FeatureManifest Location="SP2013WebParts\Feature.xml" />
+    <FeatureManifest Location="SP2013MasterPage\Feature.xml" />
+  </FeatureManifests>
+</Solution>

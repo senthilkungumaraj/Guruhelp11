@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="Branding Web Parts" Id="ef3814cd-56a7-4811-8f2e-8817c67ae1c4" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="CallOuts4Column\Elements.xml" />
+    <ElementFile Location="CallOuts4Column\CallOuts4Column.webpart" />
+    <ElementManifest Location="CallOuts3Column\Elements.xml" />
+    <ElementFile Location="CallOuts3Column\CallOuts3Column.webpart" />
+    <ElementManifest Location="HeroBanner\Elements.xml" />
+    <ElementFile Location="HeroBanner\HeroBanner.webpart" />
+  </ElementManifests>
+</Feature>

@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{36C6746D-92C0-43A7-A06D-ED601A303A13}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SP2013Branding</RootNamespace>
+    <AssemblyName>SP2013Branding</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controller\BannerController.cs" />
+    <Compile Include="Controller\CallOutController.cs" />
+    <Compile Include="Model\CallOut.cs" />
+    <Compile Include="Features\SP2013ListInstances\SP2013ListInstances.EventReceiver.cs">
+      <DependentUpon>SP2013ListInstances.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Model\HeroBanner.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebParts\CallOuts3Column\CallOuts3Column.ascx.cs">
+      <DependentUpon>CallOuts3Column.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\CallOuts3Column\CallOuts3Column.ascx.g.cs" />
+    <Compile Include="WebParts\CallOuts4Column\CallOuts4Column.ascx.cs">
+      <DependentUpon>CallOuts4Column.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\CallOuts4Column\CallOuts4Column.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CallOuts4Column.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\HeroBanner\HeroBanner.ascx.cs">
+      <DependentUpon>HeroBanner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebParts\HeroBanner\HeroBanner.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HeroBanner.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ContentTypes\ContentTypeBindings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ac236366-93ca-45fc-96b5-784a223d29ee}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\ContentTypes\CallOuts3Column\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{880b962b-eada-4a55-a2f6-310b2f8cec86}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\ContentTypes\CallOuts4Column\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{406d9921-6577-4c4d-ae82-2eaa65cbf8e3}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\ContentTypes\HeroBanner\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{220c794b-f372-4c9e-b889-222fe45ffd33}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\ContentTypes\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2bbe45e9-2fcd-4393-83d2-0b0802fbe6e4}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\ContentTypes\HomePage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fcda2966-5382-427a-b67c-3f8a0e4b9d68}</SharePointProjectItemId>
+    </None>
+    <None Include="debugInstall.bat" />
+    <None Include="Features\SP2013MasterPage\SP2013MasterPage.feature">
+      <FeatureId>{ec2eaf6a-0c23-4d72-a99e-cf9ebff66a45}</FeatureId>
+    </None>
+    <None Include="Features\SP2013WebParts\SP2013WebParts.feature">
+      <FeatureId>{7e6bef50-bea7-487e-bfbc-a99e1fba6719}</FeatureId>
+    </None>
+    <None Include="Features\SP2013ListInstances\SP2013ListInstances.feature">
+      <FeatureId>{5de4a2e0-3361-4754-a78e-a003894c8aaa}</FeatureId>
+    </None>
+    <None Include="Features\SP2013ContentTypes\SP2013ContentTypes.feature">
+      <FeatureId>{5a366599-0761-4e2d-94c4-c1bb4af33344}</FeatureId>
+    </None>
+    <None Include="Features\SP2013ContentTypeBindings\SP2013ContentTypeBindings.feature">
+      <FeatureId>{7dda9788-49d8-45df-a01d-478cb8a28ea5}</FeatureId>
+    </None>
+    <None Include="Features\SP2013PageLayouts\SP2013PageLayouts.feature">
+      <FeatureId>{40b59e03-7632-4572-bb18-fc4c04dc2ef8}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="ListInstances\Call Outs\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0c406970-1e93-44fd-9ebe-35e3dcb64163}</SharePointProjectItemId>
+    </None>
+    <None Include="ListInstances\Hero Banners\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{60a9b2ee-9572-4554-aab6-d5ca0172a2e2}</SharePointProjectItemId>
+    </None>
+    <None Include="MasterPage\lib\css\bootstrap.less" />
+    <None Include="MasterPage\lib\css\normalize.less" />
+    <None Include="MasterPage\lib\css\style-desktop-large.less" />
+    <None Include="MasterPage\lib\css\style-desktop.less" />
+    <None Include="MasterPage\lib\css\style-fonts.less" />
+    <None Include="MasterPage\lib\css\style-mobile.less" />
+    <None Include="MasterPage\lib\css\style-tablet.less" />
+    <None Include="MasterPage\lib\css\style.less" />
+    <None Include="MasterPage\lib\css\variables-mixins.less" />
+    <None Include="MasterPage\lib\fonts\fontawesome-webfont.eot" />
+    <None Include="MasterPage\lib\fonts\fontawesome-webfont.ttf" />
+    <None Include="MasterPage\lib\fonts\fontawesome-webfont.woff" />
+    <None Include="MasterPage\lib\fonts\fontawesome-webfont.woff2" />
+    <None Include="MasterPage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8558e239-52d9-434e-8321-afcd6ca0def7}</SharePointProjectItemId>
+    </None>
+    <None Include="MasterPage\SP2013Master.master" />
+    <None Include="Package\Package.package">
+      <PackageId>{433cf1f2-51a4-4b2b-b6be-5a399b8615c6}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="PageLayouts\PageLayouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{640b1b31-0f70-4350-aab4-82e6f5812a16}</SharePointProjectItemId>
+    </None>
+    <None Include="SiteColumns\SiteColumns\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bebf5f8f-345a-4005-b5e6-921da417d5d6}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\CallOuts3Column\CallOuts3Column.webpart" />
+    <None Include="WebParts\CallOuts3Column\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{60da0707-5e8c-48e5-b13a-af116d7947c8}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\CallOuts4Column\CallOuts4Column.webpart" />
+    <None Include="WebParts\CallOuts4Column\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{35c2b501-d3e5-44a7-bc90-5c8931ff511a}</SharePointProjectItemId>
+    </None>
+    <None Include="WebParts\HeroBanner\HeroBanner.webpart" />
+    <None Include="WebParts\HeroBanner\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{70b3670d-53c3-48e0-8ffe-01847c945b5a}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ContentTypes\ContentTypeBindings\Elements.xml" />
+    <Content Include="ContentTypes\ContentTypes\CallOuts3Column\Elements.xml" />
+    <Content Include="ContentTypes\ContentTypes\CallOuts4Column\Elements.xml" />
+    <Content Include="ContentTypes\ContentTypes\HeroBanner\Elements.xml" />
+    <Content Include="ContentTypes\ContentTypes\HomePage\Elements.xml" />
+    <Content Include="Features\SP2013MasterPage\SP2013MasterPage.Template.xml">
+      <DependentUpon>SP2013MasterPage.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SP2013WebParts\SP2013WebParts.Template.xml">
+      <DependentUpon>SP2013WebParts.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SP2013ListInstances\SP2013ListInstances.Template.xml">
+      <DependentUpon>SP2013ListInstances.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SP2013ContentTypes\SP2013ContentTypes.Template.xml">
+      <DependentUpon>SP2013ContentTypes.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SP2013ContentTypeBindings\SP2013ContentTypeBindings.Template.xml">
+      <DependentUpon>SP2013ContentTypeBindings.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SP2013PageLayouts\SP2013PageLayouts.Template.xml">
+      <DependentUpon>SP2013PageLayouts.feature</DependentUpon>
+    </Content>
+    <Content Include="ListInstances\Call Outs\Elements.xml" />
+    <Content Include="ListInstances\Hero Banners\Elements.xml" />
+    <Content Include="MasterPage\Elements.xml" />
+    <Content Include="MasterPage\lib\css\bootstrap.css" />
+    <Content Include="MasterPage\lib\css\normalize.css" />
+    <Content Include="MasterPage\lib\css\style-correction.css" />
+    <Content Include="MasterPage\lib\css\style-desktop-large.css" />
+    <Content Include="MasterPage\lib\css\style-desktop.css" />
+    <Content Include="MasterPage\lib\css\style-fonts.css" />
+    <Content Include="MasterPage\lib\css\style.css" />
+    <Content Include="MasterPage\lib\fonts\fontawesome-webfont.svg" />
+    <Content Include="MasterPage\lib\img\home\call-thumb1.jpg" />
+    <Content Include="MasterPage\lib\img\home\call-thumb2.jpg" />
+    <Content Include="MasterPage\lib\img\home\call-thumb3.jpg" />
+    <Content Include="MasterPage\lib\img\home\hero.png" />
+    <Content Include="MasterPage\lib\img\home\main-bg.png" />
+    <Content Include="MasterPage\lib\img\logo.png" />
+    <Content Include="MasterPage\lib\img\logo.svg" />
+    <Content Include="MasterPage\lib\img\thefoundation.svg" />
+    <Content Include="MasterPage\lib\img\watermark.svg" />
+    <Content Include="MasterPage\lib\js\jquery-1.11.1.min.js" />
+    <Content Include="MasterPage\lib\js\modernizr-2.8.3.min.js" />
+    <Content Include="MasterPage\lib\js\scripts.js" />
+    <Content Include="PageLayouts\PageLayouts\Elements.xml" />
+    <Content Include="PageLayouts\PageLayouts\HomeWebPartPage.aspx" />
+    <Content Include="SiteColumns\SiteColumns\Elements.xml" />
+    <Content Include="WebParts\CallOuts3Column\CallOuts3Column.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+    </Content>
+    <Content Include="WebParts\CallOuts3Column\Elements.xml" />
+    <Content Include="WebParts\CallOuts4Column\CallOuts4Column.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>CallOuts4Column.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="WebParts\CallOuts4Column\Elements.xml" />
+    <Content Include="WebParts\HeroBanner\Elements.xml" />
+    <Content Include="WebParts\HeroBanner\HeroBanner.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>HeroBanner.ascx.g.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <PropertyGroup>
+    <PostBuildEvent>echo F | XCOPY "$(TargetPath)" "$(ProjectDir)\GAC" /S /F /R /Y
+
+cd $(ProjectDir)
+IF [$(ConfigurationName)]==[Debug] debugInstall.bat</PostBuildEvent>
+  </PropertyGroup>
+</Project>

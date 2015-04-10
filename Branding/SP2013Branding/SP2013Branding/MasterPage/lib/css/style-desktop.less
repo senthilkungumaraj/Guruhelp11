@@ -1,0 +1,133 @@
+@import 'variables-mixins';
+/* desktop */
+@media screen and (min-width: 769px) {
+	.wrap {
+		max-width: 980px;
+	}
+	/* header & nav */
+	header {
+		height: 155px;
+	}
+	nav .welcome {
+		float: left;
+	}
+	nav.logedinnav,
+	nav.secnav,
+	nav.mainnav {
+		float: right;
+		position: relative;
+		right: 0;
+		top: 0;
+	}
+	nav.mainnav {
+		right: 18px;
+		top: 40px;
+	}
+	nav.logedinnav > ul {
+		float: left;
+	}
+	nav.logedinnav > ul > li,
+	nav.secnav > ul > li,
+	nav.mainnav > ul > li {
+		float: left;
+		margin-left: 20px;
+	}
+	nav.mainnav a {
+		font-size: 20px;
+		.transition(all, .3s, ease);
+	}
+	nav.mainnav > ul > li > a:hover,
+	nav.mainnav > ul > li.hover > a {
+		color: @teal;
+	}
+	nav.mainnav .sub-menu a:hover {
+		background: @blue;
+	}
+	/* home */
+	.homebanner {
+		height: 375px;
+	}
+	.homebanner img.hero {
+		bottom: 0;
+		display: block;
+		left: 75px;
+		position: absolute;
+	}
+	.homebanner .content {
+		margin-right: 50px;
+		margin-top: 60px;
+		padding: 45px 0;
+		width: 650px;
+	}
+	.homebanner .content object {
+		left: 50%;
+		margin-left: -151px;
+	}
+	.featuredcta .cta {
+		float: left;
+		width: 31.6666667%;
+		margin-left: 2.5%;
+	}
+	.featuredcta .cta:first-child {
+		margin-left: 0;
+	}
+	.featuredcta .cta img {
+		margin-right: 4%;
+		width: 36%;
+	}
+	.featuredcta .cta .content {
+		width: 60%;
+	}
+	.newsfeedswrap .socialmedia {
+		float: left;
+		width: 25%;
+	}
+	.newsfeedswrap .latestnews {
+		float: left;
+		margin-left: 6px;
+		width: 25%;
+	}
+	.newsfeedswrap .accountinfo {
+		float: left;
+		margin-left: 6px;
+		width: 40%;
+	}
+	.youraccountwrap {
+		float: right;
+		width: 253px;
+	}
+	/* footer */
+	.footleft {
+		float: left;
+	}
+	.footright{
+		float: right;
+		width: 367px;
+	}
+	ul.social li,
+	nav.footermain li,
+	nav.footersec li {
+		float: left;
+	}
+	nav.footermain li,
+	nav.footersec li {
+		border-left: 1px solid @grey;
+		padding: 0 10px;
+	}
+	ul.social li {
+		margin-left: 20px;
+	}
+	footer ul.social li:first-child {
+		margin-left: 0;
+	}
+	nav.footermain li a:hover,
+	nav.footersec li a:hover {
+		text-decoration: underline;
+	}
+	ul.social li a {
+		.transition(color, .3s, ease);
+	}
+	ul.social li a:hover {
+		color: @purple;
+	}
+}

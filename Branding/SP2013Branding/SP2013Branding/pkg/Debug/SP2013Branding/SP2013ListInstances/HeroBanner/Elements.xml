@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100530E326BACF6418186C89EA57C84A5D1" Name="Hero Banner" Group="Custom Content Types" Description="My Content Type" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9195}" DisplayName="Banner Image" Required="FALSE" Name="BannerImage" />
+      <FieldRef ID="{0f5463bb-1390-45f5-93e8-e2db9bbe9194}" DisplayName="Banner Text" Required="FALSE" Name="BannerText" />
+    </FieldRefs>
+  </ContentType>
+</Elements>
